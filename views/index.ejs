@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudinary File Server</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 40px; }
+        table { width: 50%; margin: auto; border-collapse: collapse; }
+        th, td { padding: 10px; border: 1px solid black; }
+        th { background: #333; color: white; }
+        img { width: 100px; height: auto; }
+        button { margin-top: 10px; padding: 8px; }
+    </style>
+</head>
+<body>
+    <h1>Cloudinary File Server</h1>
+
+    <h2>Upload a File</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <h2>Uploaded Files</h2>
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Filename</th>
+            <th>Delete</th>
+        </tr>
+        <% files.forEach(file => { %>
+        <tr>
+            <td><img src="<%= file.url %>" alt="File"></td>
+            <td><%= file.filename %></td>
+            <td><a href="/delete/<%= file.filename %>" style="color: red;">Delete</a></td>
+        </tr>
+        <% }) %>
+    </table>
+</body>
+</html>
