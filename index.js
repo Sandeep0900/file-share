@@ -10,8 +10,8 @@ const PORT = 8080;
 
 // Configure Cloudinary
 cloudinary.config({
-  cloud_name: dr42vh0qx,
-  api_key: 116554237847999,
+  cloud_name: "dr42vh0qx",
+  api_key: "116554237847999",
   api_secret: "9m_jNxHlrbAZzTBzIcEoMDnkLz8",
 });
 
