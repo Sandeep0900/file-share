@@ -2,7 +2,6 @@ Absolutely! Here's a professional and clean `README.md` file for your **File Sha
 
 ---
 
-```markdown
 # 📁 File Share App
 
 A simple and elegant web application that allows users to **upload**, **view**, and **delete** files securely using **Cloudinary** as the cloud storage backend.
