@@ -87,5 +87,3 @@ Made with ❤️ by [Sandeep Sharma](https://github.com/Sandeep0900)
 This project is open-source and available under the [MIT License](LICENSE).
 
 ```
-
----
